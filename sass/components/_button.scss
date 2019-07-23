@@ -49,6 +49,15 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &--animated {
     animation: moveInBottom .5s ease-out .75s; /*.75 задержка*/
     animation-fill-mode: backwards;  /*Применяет стили 0% до старта анимации (на время задержки старта анимации чтобы кнопка не была видна)*/

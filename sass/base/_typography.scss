@@ -11,6 +11,7 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden; /*Включается у родительского элемента чтобы анимация не дрыгалась в конце*/
   margin-bottom: 6rem;
+
   &--main {
     display: block;
     font-size: 4rem;
@@ -19,6 +20,7 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    margin-right: -2.5rem; //my fix for upper text sliding
 
     /* animation-iteration-count: 3;
     animation-delay: 3s; */
