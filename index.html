@@ -13,6 +13,39 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+    
+      <div class="navigation">
+          <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+          <label for="navi-toggle" class="navigation__button">MENU</label>
+          <div class="navigation__background">
+              &nbsp;
+          </div>
+          <nav class="navigation__nav">
+              <ul class="navigation__list">
+
+                  <li class="navigation__item">
+                      <a href="#" class="navigation__link"><span>1</span>About Natours</a>
+                  </li>
+
+                  <li class="navigation__item">
+                      <a href="#" class="navigation__link"><span>2</span>Your benefits</a>
+                  </li>
+
+                  <li class="navigation__item">
+                      <a href="#" class="navigation__link"><span>3</span>Popular Tours</a>
+                  </li>
+
+                  <li class="navigation__item">
+                      <a href="#" class="navigation__link"><span>4</span>Stories</a>
+                  </li>
+
+                  <li class="navigation__item">
+                      <a href="#" class="navigation__link"><span>5</span>Book now</a>
+                  </li>
+
+              </ul>
+          </nav>
+      </div>    
       <header class="header">
           <div class="header__logo-box">
               <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -286,14 +319,57 @@
                                   <input type="email" class="form__input" placeholder="Email" required id="email">
                                   <label for="email" class="form__label">Email address</label>
                               </div>
+                              <div class="form__group u-margin-bottom-medium">
+                                  <div class="form__radio-group">
+                                      <input type="radio" class="form__radio-input" id="small" name="size">
+                                      <label for="small" class="form__radio-label">
+                                          <span class="form__radio-button"></span>
+                                          Small tour group
+                                      </label>
+                                  </div>
+                                  <div class="form__radio-group">
+                                      <input type="radio" class="form__radio-input" id="large" name="size">
+                                      <label for="large" class="form__radio-label">
+                                          <span class="form__radio-button"></span>
+                                          Large tour group
+                                      </label>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <button class="btn btn--green">Next step &rarr;</button>
+                              </div>
                           </form>
-
-
                       </div>
                   </div>
               </div>
           </section>
       </main>
+      <footer class="footer">
+          <div class="footer__logo-box">
+              <img src="./img/logo-green-2x.png" alt="logo" class="footer__logo">
+          </div>
+          <div class="row">
+              <div class="col-1-of-2">
+                  <div class="footer__navigation">
+                      <ul class="footer__list">
+                          <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                          <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                          <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                          <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                          <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-1-of-2">
+                  <p class="footer__copyright">
+                      Built by <a href="#" class="footer__link"> &nbsp; Denis Artemenko  &nbsp;</a>with skills from
+                      <a href="#" class="footer__link"> &nbsp; Advanced CSS & SASS COURSE &nbsp; </a> Copyright &copy; by Denis Artemenko.
+                      You are allowed 100% for both personal and commercial use, but not to claim it as your own design. A credit to
+                      the original author, of course, appreciared!
+                  </p>
+              </div>
+          </div>
+      </footer>
       <!--
       <div class="row">
           <div class="col-1-of-4">1</div>

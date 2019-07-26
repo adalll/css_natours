@@ -1,6 +1,8 @@
 .btn {
 
-  &:link, &:visited {
+  &,
+  &:link,
+  &:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
@@ -10,6 +12,10 @@
     position: relative;
     backface-visibility: hidden; /*Включается у родительского элемента чтобы анимация не дрыгалась в конце*/
     font-size: $default-font-size;
+    //change for the <button> element
+    border: none;
+    cursor: pointer;
+
   }
 
   &:hover {
@@ -22,7 +28,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-.1rem);
     box-shadow: 0 .5rem 1rem rgba($color-black, .2);
   }
