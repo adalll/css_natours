@@ -10,7 +10,7 @@
     border-radius: 10rem;  /*любое большое число для полного скругления */
     transition: all .2s;
     position: relative;
-    backface-visibility: hidden; /*Включается у родительского элемента чтобы анимация не дрыгалась в конце*/
+    //backface-visibility: hidden; /*Включается у родительского элемента чтобы анимация не дрыгалась в конце*/
     font-size: $default-font-size;
     //change for the <button> element
     border: none;
