@@ -20,11 +20,13 @@
 900-1200px tablet landscape
 [1200-1800px] is where our normal style applying
 1800px + big desktops
+
+ORDER:
+Base+typography > general layout+grid > page layout > components
  */
 
 @mixin respond($breakpoint) {
-  //1em here = 16px
-  @if($breakpoint) == phone {
+   @if($breakpoint) == phone {
     @media (max-width: 37.5em) { @content }; //600px
   }
   @if($breakpoint) == tab-port {
